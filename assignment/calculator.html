@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #con {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            gap: 10px;
+        }
+    </style>
+ </head>
+
+ <body>
+    <div id="con">
+        <h1>Calculator</h1>
+        <input type="number" id="n1">
+        <input type="number" id="n2">
+
+        <div>
+            +<input type="radio" name="type" value="sum">
+            -<input type="radio" name="type" value="sub">
+            /<input type="radio" name="type" value="div">
+            *<input type="radio" name="type" value="mul">
+        </div>
+        <button id="btn" onclick="calc()">CAlC</button>
+        <p id="result"></p>
+     </div>
+     <script>
+         function calc()
+          {
+              let n1 = parseInt(document.querySelector("#n1").value);
+              let n2 = parseInt(document.querySelector("#n2").value);
+              let oper = document.querySelector('input[name="type"]:checked')?.value;
+                 if (oper == "sum") {
+                     document.querySelector("#result").innerHTML = n1 + n2;
+                 } else if (oper == "sub") {
+                     document.querySelector("#result").innerHTML = n1 - n2;
+                 } else if (oper == "div") {
+                     document.querySelector("#result").innerHTML = n1 / n2;
+                 } else if (oper == "mul") {
+                     document.querySelector("#result").innerHTML = n1 * n2;
+                 }
+          }
+     </script>
+  </body>
+</html>

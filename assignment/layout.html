@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Express</title>
+    <style>
+ body{
+    background-color: rgb(248, 230, 212);
+ }
+.header
+{
+ width: 100%;
+ min-height: 50px;
+ background-color: rgb(103, 103, 103);
+ padding-left: 2%;
+ line-height: 50px;
+ margin-bottom: 10px;
+ text-align: center;
+}
+.nav 
+{
+ width: 100%;
+ min-height: 47px;
+ background-color:  rgb(103, 103, 103);
+ padding-left: 2%;
+ margin-bottom: 10px;
+}
+ul
+{
+ list-style-type:none;
+ padding:2px;
+}
+ul li
+{
+ display:block;
+ float:left;
+}
+li ul
+{
+ display:none;
+}
+ul li a
+{
+ display:block;
+ background-color:#007689;
+ padding:10px;
+ text-decoration:none;
+ text-align:center;
+ color:white;
+ width:269px;
+ border:2px solid black;
+}
+ul li a:hover
+{
+ background-color:#007689;
+ color:white;
+}
+li:hover ul
+{
+ display:block;
+ position:absolute;
+}
+li:hover li
+{
+ float:none;
+}
+li:hover a
+{
+ background-color:#94c548;
+ color:black;
+}
+li:hover li a:hover
+{
+ background:black;
+ width:269px;
+}
+section
+{
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+ height: 450px;
+ padding: 15px;
+ background-color:  rgb(103, 103, 103);
+ margin-bottom: 10px;
+}
+.left,.right
+{
+ width: calc(50% - 15px);
+ background-color: grey;
+ height: 100%;
+}
+.footer
+{
+ width: 100%;
+ min-height: 50px;
+ background-color: rgb(103, 103, 103);
+ padding-left: 2%;
+ line-height: 50px;
+ margin-bottom: 10px;
+ text-align: center;
+}
+.image
+{
+    width: 100%;
+    padding: 10px;
+    border: 5px soild gray;
+    margin: 0;
+}
+.image img{
+    border: 5px soild gray;
+}
+.image2
+{
+    width: 100%;
+    padding: 10px;
+    border: 5px soild gray;
+    text-align: justify;
+    margin: 0;
+}   
+</style>
+</head>
+<body>
+    <div class="header"> 
+        <h1>The Tourist Express</h1>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="file:///D:/Mern%20Stack/css/assignment/images.html">Gallery</a></li>
+            <li><a href="#offers">Offers</a>
+                <ul>
+                    <li><a href="#">Packges</a></li>
+                    <li><a href="#">Bookings</a></li>
+                    <li><a href="#">Shopping</a></li>
+                 </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <section>
+    <div class="right">
+        <div class="image2">
+        <img src="D:\Mern Stack\photo\download (3).jpeg" width="355" height="263">
+        <img src="D:\Mern Stack\photo\download (4).jpeg" width="355" height="263">
+        <p><b><i>India</i></b> is a place of wonders, with a diversity of culture, geography, dozens of languages, over a billion people,and gifted natural resources. India is a land of dazzling natural beauty from the mighty Himalayas in the north, through the plains of Punjab, over the hills of Assam in the east, and down to tropical coastline of south. It offers a variety ol landscapes, climate, flora and fauna. India is one of the most popular travel destinations in the world and attracts everyone from backpackers,  to cultural and spiritual seekers and just those in search of a good time. The numerous architectural wonders in India have a story of their own and are not to be missed. when it comes to tourist attractions in India and places to visit, there is so much to see and do, that travellers are often talking about revisiting this fascinating land.</p>
+        </div>
+    </div>
+    <div class="left">
+        <div class="image">
+        <img src="D:\Mern Stack\photo\download.jpeg" width="355" height="200">
+        <img src="D:\Mern Stack\photo\p8.jpeg" width="355" height="200">
+        <img src="D:\Mern Stack\photo\p1.jpeg" width="355" height="200">
+        <img src="D:\Mern Stack\photo\p4.jpeg" width="355" height="200">
+        </div>
+    </div>
+    </section>
+    <div class="footer">
+        <p>&copy; 2025 The Tourist Express</p>
+    </div>
+</body>
+</html>

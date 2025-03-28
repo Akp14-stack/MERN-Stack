@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      background-color: grey;
+      width: 60px;
+      height: 25px;
+      padding: auto;
+      margin: auto;
+      display: flex;
+    }
+  </style>
+</head>
+
+<body onload="startTime()">
+
+  <center>
+    <h2>Digital Clock</h2>
+  </center>
+  <div class="container">
+    <div id="txt"></div>
+  </div>
+  <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+
+    function checkTime(i) {
+      if (i < 10) { i = "0" + i };
+      return i;
+    }
+  </script>
+
+</body>
+
+</html>
